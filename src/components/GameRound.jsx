@@ -15,8 +15,16 @@ export const GameRound = ({ currentTone, setRandomTone }) => {
   return (
     <div>
       <h1>{currentTone.note}</h1>
-      <button onClick={playNote}>Play</button>
-      <button onClick={getRandomTone}>Randomizer</button>
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <button className="bg-blue-500 rounded-lg py-4 px-12" onClick={playNote}>
+        Play
+      </button>
+      <button
+        className="bg-blue-500 rounded-lg py-4 px-12"
+        onClick={getRandomTone}
+      >
+        Randomizer
+      </button>
     </div>
   );
 };

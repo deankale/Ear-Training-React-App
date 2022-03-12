@@ -1,7 +1,3 @@
-// function getRandomInt(max) {
-//   return Math.floor(Math.random() * max);
-// }
-
 export const tones = [
   {
     audioFile: "guitar_E1.wav",
