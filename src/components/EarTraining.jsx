@@ -1,17 +1,16 @@
-import React from "react";
-import { tones } from "../constants";
+import React, { useState } from "react";
+import { GameRound } from "./GameRound";
 
-export default function EarTraining() {
-  function bangNote() {
-    let randomIndex = Math.floor(Math.random() * 37);
-    let { audioFile } = tones[randomIndex];
-    let audioPath = `/audio/${audioFile}`;
-    new Audio(audioPath).play();
-  }
+export const EarTraining = () => {
+  const [randomTone, setRandomTone] = useState({
+    audioFile: "",
+    freq: "",
+    note: "",
+  });
+
   return (
     <div>
-      <h1>Hello World</h1>
-      <button onClick={bangNote}>Play</button>
+      <GameRound currentTone={randomTone} setRandomTone={setRandomTone} />
     </div>
   );
-}
+};
