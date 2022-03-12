@@ -1,7 +1,7 @@
 import logo from "./kdlogodark.svg";
 import EarTraining from "./components/EarTraining";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +10,6 @@ function App() {
       <EarTraining />
     </div>
   );
-}
+};
 
 export default App;

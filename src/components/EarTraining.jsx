@@ -11,7 +11,7 @@ export default function EarTraining() {
   return (
     <div>
       <h1>Hello World</h1>
-      <button onClick={bangNote}>Click Me</button>
+      <button onClick={bangNote}>Play</button>
     </div>
   );
 }
